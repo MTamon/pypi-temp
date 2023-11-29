@@ -10,7 +10,6 @@ NAME = "project"
 PACKAGES = ["project"]
 DESCRIPTION = "description"
 KEYWORDS = "keywords1, kyewords2, keywords3, ..."
-TOPIC = "topic"
 
 root_dir = path.abspath(path.dirname(__file__))
 
@@ -63,7 +62,6 @@ setup(
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.9",
-        f"Topic :: {TOPIC}",
         "Topic :: Software Development :: Libraries :: Python Modules",
     ],
 )
