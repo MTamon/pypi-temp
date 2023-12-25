@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 
 from os import path
-from setuptools import setup
+from setuptools import setup, find_packages
 
 # TODO: change project to your project name
 from project import VERSION, LICENCE, AUTHOR, EMAIL, GIT_URL
 
+# TODO: change information
 NAME = "project"
-PACKAGES = ["project"]
 DESCRIPTION = "description"
 KEYWORDS = "keywords1, kyewords2, keywords3, ..."
 
@@ -44,7 +44,7 @@ with open("README.md", encoding="utf-8") as f:
 
 setup(
     name=NAME,
-    packages=PACKAGES,
+    packages=find_packages(),
     version=VERSION,
     license=LICENCE,
     install_requires=_requirements(),
